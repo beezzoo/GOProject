@@ -1,10 +1,9 @@
 package main
 
 import (
+	"github.com/maxence-charriere/go-app/v9/pkg/app"
 	"log"
 	"net/http"
-
-	"github.com/maxence-charriere/go-app/v9/pkg/app"
 )
 
 // hello is a component that displays a simple "Hello World!". A component is a
@@ -24,7 +23,7 @@ func (h *goproject) Render() app.UI {
 // It is executed in 2 different environments: A client (the web browser) and a
 // server.
 func main() {
-	// The first thing to do is to associate the goproject component with a path.
+	// The first thing to do is to associate the hello component with a path.
 	//
 	// This is done by calling the Route() function,  which tells go-app what
 	// component to display for a given path, on both client and server-side.
