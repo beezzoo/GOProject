@@ -223,8 +223,8 @@ func (h *Handler) initCacheableResources() {
 
 func (h *Handler) initIcon() {
 	if h.Icon.Default == "" {
-		h.Icon.Default = "https://www.clipartkey.com/mpngs/m/161-1616123_loading-spinner-png-transparent-background-loading-png.png"
-		h.Icon.Large = "https://www.clipartkey.com/mpngs/m/161-1616123_loading-spinner-png-transparent-background-loading-png.png"
+		h.Icon.Default = "![](../../../../../../../web/loading_icon_192.png)"
+		h.Icon.Large = "![](../../../../../../../web/loading_icon_512.png)"
 	}
 
 	if h.Icon.AppleTouch == "" {
@@ -259,7 +259,7 @@ func (h *Handler) initPWA() {
 	}
 
 	if h.LoadingLabel == "" {
-		h.LoadingLabel = "Loading"
+		h.LoadingLabel = "Загрузка..."
 	}
 }
 
