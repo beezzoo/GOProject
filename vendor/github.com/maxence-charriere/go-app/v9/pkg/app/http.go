@@ -223,8 +223,8 @@ func (h *Handler) initCacheableResources() {
 
 func (h *Handler) initIcon() {
 	if h.Icon.Default == "" {
-		h.Icon.Default = "![](../../../../../../../web/loading_icon_192.png)"
-		h.Icon.Large = "![](../../../../../../../web/loading_icon_512.png)"
+		h.Icon.Default = "/web/loading_icon.png"
+		h.Icon.Large = "/web/loading_icon.png"
 	}
 
 	if h.Icon.AppleTouch == "" {
