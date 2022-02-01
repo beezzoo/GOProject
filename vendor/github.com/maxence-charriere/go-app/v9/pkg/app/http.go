@@ -223,8 +223,8 @@ func (h *Handler) initCacheableResources() {
 
 func (h *Handler) initIcon() {
 	if h.Icon.Default == "" {
-		h.Icon.Default = "https://storage.googleapis.com/murlok-github/icon-192.png"
-		h.Icon.Large = "https://storage.googleapis.com/murlok-github/icon-512.png"
+		h.Icon.Default = "https://www.clipartkey.com/mpngs/m/161-1616123_loading-spinner-png-transparent-background-loading-png.png"
+		h.Icon.Large = "https://www.clipartkey.com/mpngs/m/161-1616123_loading-spinner-png-transparent-background-loading-png.png"
 	}
 
 	if h.Icon.AppleTouch == "" {
