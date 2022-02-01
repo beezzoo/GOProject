@@ -259,7 +259,7 @@ func (h *Handler) initPWA() {
 	}
 
 	if h.LoadingLabel == "" {
-		h.LoadingLabel = "Загрузка..."
+		h.LoadingLabel = "!!!!...!!!!"
 	}
 }
 
