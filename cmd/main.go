@@ -9,14 +9,23 @@ import (
 // hello is a component that displays a simple "Hello World!". A component is a
 // customizable, independent, and reusable UI element. It is created by
 // embedding app.Compo into a struct.
+
 type goproject struct {
 	app.Compo
+	Name string //добавлено код для проверки нового элемента
 }
 
 // The Render method is where the component appearance is defined. Here, a
 // "Hello World!" is displayed as a heading.
+
+//Временно закомментирован первоначальный код
+//func (h *goproject) Render() app.UI {
+//	return app.H1().Text("Hello World!")
+//}
+
+//Добавлен код для проверки нового элемента
 func (h *goproject) Render() app.UI {
-	return app.H1().Text("Hello World!")
+	return app.Div().Text("Hello, " + h.Name) // The Name field is display after "Hello, "
 }
 
 // The main function is the entry point where the app is configured and started.
